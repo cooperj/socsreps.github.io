@@ -193,15 +193,15 @@ body {
   @apply mb-4 mx-auto text-gray-800;
 }
 
-.blog-tiles {
+.posts-grid {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4;
 }
 
-.blog-tile-container {
+.post-tile {
   @apply flex flex-col items-center;
 }
 
-.blog-tile-card {
+.post-tile-card {
   @apply block p-4 border border-gray-300 hover:bg-gray-200 transition-colors;
 }
 
