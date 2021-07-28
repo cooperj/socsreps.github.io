@@ -4,7 +4,7 @@ The SoCS SU Reps Web Blog has been created to provide an open and free space to 
 
 ## Overview
 
-This website has been created using the most basic of HTML/CSS/JS. The limited JS used in the site is purely to populate the burger menu bar drop downs and populate faqs drop downs. No tracking, cookies etc are used. 
+This website has been created using mostly basic HTML/CSS/JS. The limited JS used in the site is purely to allow navigation, the FAQ and a few other navigational items work. No tracking, cookies etc are used. 
 
 The reason we wanted to keep the site as simple as possible is to encourage as many contributors as possible who may not yet have experience in open source collaboration, or who may not be familiar with the Git process or web design in general. 
 
@@ -20,11 +20,13 @@ There are 2 types of content available to be created. These are 'Posts' and 'Blo
 
 **NAMING CONVENTIONS:**
 
-To make it as easy as possible to create a blog please name all your associated files such as images the same name as the blog itself. Please also use Camel Case and the naming convention as shown below:
+To make it as easy as possible to create a blog please name all your associated files such as images the same name as the blog itself. Please also use `kebab-case` and the naming convention as shown below:
 
-**Blog:**   myFirst30DaysAsSocsSchoolRep_BLOG.html
+**Blog:**   my-first-30-days.html
 
-**Image:**   myFirst30DaysAsSocsSchoolRep_IMAGE1.html (then IMAGE2 .. and so on)
+**Image:**   my-first-30-days_image1.html (then image2 .. and so on)
+
+Blogs are kept in the `/blogs` folder while images are kept in `/blogs/assets`
 
 This will help separate out content from the website in general and if any images are lost it is easy to find which ones they are.
 
@@ -38,22 +40,39 @@ To make the formatting of the website as simple as possible there are 2 image si
 
 Where possible please try to use these sizes as it helps keep the posts on the main blog page the same size as well as working more evenly across screen sizes.
 
+## Styling - TailwindCSS
+This website uses a CSS framework called [tailwindcss](https://tailwindcss.com/) to provide the bulk of the styling. 
+
+The key advantage to this is that the large majority of styling is done through classes directly in the HTML rather than writing CSS files. 
+
+**The below does not need to be done if you are simply adding content!**
+
+Due to this, any changes in styling will require a contributor to have Node.JS installed ([Instructions to install Node.JS](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)).
+
+When developing and editing any styles, you can run `npm run watch` which will "watch" all HTML and CSS files for any style changes and automatically generate the output CSS for you.
+
+Before committing, please make sure to generate a "production" CSS file by running the respective build command for your OS:
+ - Windows: `npm run build-win`
+ - Linux: `npm run build-linux`
+ - MacOS: `npm run build-macos`
+
+Don't worry about making a mistake! All of this will be checked when you submit a PR 😊
+
 ## How to create a new Blog
 
 **STEP 1 - Create The Blog**
 
-- Navigate from your root folder to > posts
-- In the 'posts' folder there is a 'blogs' folder. Open this.
-- Duplicate a previous blog such as 'myFirst30DaysAsSocsSchoolRep_BLOG.html' and rename
-- If you are adding Images please use the 'assets' folder that is in the 'posts folder' to hold them
+- Navigate from your root folder to > blogs
+- Duplicate the blank blog template `blank-blog-template.html` and rename
+- If you are adding Images please use the `assets` folder that is in the `blogs` folder to hold them
 - Open your new blog and update with your new text, images, videos etc. Again, remember to update the href tag for any image links
 - When you are finished save the file
 
 **STEP 2 - Add the new blog to the main Blog page**
 
 - Navigate to the main root folder of the project
-- Here, you will see a file called 'blog.html'. Open it in your text editor of choice
-- Under the section called '[month] blogs' (where month is the current month such as 'July Blogs') you will see a list of previous blog posts
+- Here, you will see a file called `blog.html`. Open it in your text editor of choice
+- Under the section called `[month] blogs` (where month is the current month such as `July Blogs`) you will see a list of previous blog posts
 - Copy a whole Div section of a single respective post and paste it at the top of the main month section
 
 <p align="center"><img src="assets/blogsection.png"></p>
@@ -73,7 +92,7 @@ The general process of contributing on GitHub is widely documented however the o
 
 1. Clone the repository using GitHub desktop or the CLI into this location (CLI is recommended as this helps you become more familiar with Git in general)
 
-1. If you are using a Text editor such as Sublime then the best place to start is by opening the 'index.html' file using Sublime or Vim.
+1. If you are using a Text editor such as Sublime then the best place to start is by opening the 'index.html' file.
 
 1. To see the website locally you can either drag and drop the 'index.html' file into your browser bar or right click the file and select 'open with [your browser of choice]'.
 
@@ -81,7 +100,6 @@ The general process of contributing on GitHub is widely documented however the o
 
 ## Acknowledgments
 
-A big thanks to <b><a href="https://github.com/DinkieShy">DinkieShy</a></b>, <b><a href="https://github.com/Lumbo1379">Callum Thompson</a></b>, <b><a href="https://github.com/elliott-huge">Elliott Hughes</a></b> and <b><a href="https://github.com/binaryoverload">William Oldham</a></b> for their feedback on the UX of the site which greatly improved the design and usability. Thanks also to <b><a href="https://github.com/18684092">Andy Perrett</a></b> for suggestions around providing feedback and associated responses.
-
+This website was built upon the brilliant work of [Garry Clawson](https://github.com/garry-clawson) and all the [previous contributors](https://github.com/socsreps/socsreps.github.io/graphs/contributors) who worked on the project
 
 
