@@ -22,9 +22,13 @@ There are 2 types of content available to be created. These are 'Posts' and 'Blo
 
 To make it as easy as possible to create a blog please name all your associated files such as images the same name as the blog itself. Please also use `kebab-case` and the naming convention as shown below:
 
-**Blog:**   my-first-30-days.html
+**Blog:** `my-first-30-days.html`
 
-**Image:**   my-first-30-days_image1.html (then image2 .. and so on)
+> As a general rule, images should be uploaded as a `.jpg` file to keep file sizes low
+
+**Post Image:** `my-first-30-days_post.jpg`
+
+**Image:** `my-first-30-days_image1.jpg` (then image2 .. and so on)
 
 Blogs are kept in the `/blogs` folder while images are kept in `/blogs/assets`
 
@@ -66,6 +70,8 @@ Don't worry about making a mistake! All of this will be checked when you submit 
 - Duplicate the blank blog template `blank-blog-template.html` and rename
 - If you are adding Images please use the `assets` folder that is in the `blogs` folder to hold them
 - Open your new blog and update with your new text, images, videos etc. Again, remember to update the href tag for any image links
+- Make sure to edit the title, author and date in the post
+- Also make sure to update the meta data contained in the header (This has the title, author, URL and post image URL)
 - When you are finished save the file
 
 **STEP 2 - Add the new blog to the main Blog page**
