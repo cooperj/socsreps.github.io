@@ -14,7 +14,15 @@
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tailwind-dist.css">
+    <link rel="stylesheet" href="../css/tailwind-dist.css">
+
+    <!-- OpenGraph MetaData - Add embeddable detail that's especially good for FB/Twitter/Discord -->
+    <meta property="og:title" content="My first month as a school rep" />
+    <meta property="og:author" content="William Oldham">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://socsreps.github.io/blogs/assets/1st-month-school-rep.html" />
+    <meta property="og:image" content="https://socsreps.github.io/blogs/assets/1st-month-school-rep_post.jpg" />
+
     <script src="https://kit.fontawesome.com/1e65277c13.js"></script>
   </head>
 
@@ -22,20 +30,20 @@
     <div class="container mx-auto">
         <div>
             <div class="w-full flex px-4 py-2 flex-row items-center md">
-                <a href="." class="py-2 text-2xl hover:text-red-600 transition-colors"><span class="font-bold">SoCS</span>&nbsp;SU REPS</a>
+                <a href="/" class="py-2 text-2xl hover:text-red-600 transition-colors"><span class="font-bold">SoCS</span>&nbsp;SU REPS</a>
                 <div class="flex-row items-center flex-1 flex text-lg ml-8">
                     <div class="items-center hidden md:flex">
                         <!-- BEGIN NAV ITEMS -->
-                        <a href="blog.html" class="navbar-button">Blog</a>
-                        <a href="feedback.html" class="navbar-button">Feedback</a>
-                        <a href="faq.html" class="navbar-button">FAQ</a>
-                        <a href="./#rep-team" class="navbar-button">Contact Us</a>
-                        <a href="archive.html" class="navbar-button">Archive</a>
+                        <a href="../blog.html" class="navbar-button">Blog</a>
+                        <a href="../feedback.html" class="navbar-button">Feedback</a>
+                        <a href="../faq.html" class="navbar-button">FAQ</a>
+                        <a href="../#rep-team" class="navbar-button">Contact Us</a>
+                        <a href="../archive.html" class="navbar-button">Archive</a>
                         <!-- END NAV ITEMS -->
                     </div>
                     <div class="flex items-center flex-1 justify-end">
                         <div class="items-center hidden md:flex">
-                            <a href="https://twitter.com/UoL_SoCS" class="inline-block" style="text-decoration:none" target="_blank"><img src="assets/twitter-icon.svg" class="w-8">
+                            <a href="https://twitter.com/UoL_SoCS" class="inline-block" style="text-decoration:none" target="_blank"><img src="../assets/twitter-icon.svg" class="w-8">
                             </a>
                         </div>
                         <!-- Mobile Menu Button -->
@@ -51,11 +59,11 @@
           <div class="w-full hidden bg-opacity-25 left-0 top-0 mb-4 " id="vertical-nav">
               <div class="h-full flex flex-col">
                   <!-- BEGIN VERTICAL NAV ITEMS -->
-                  <a class="vertical-nav-button" href="blog.html">Blog</a>
-                  <a class="vertical-nav-button" href="feedback.html">Feedback</a>
-                  <a class="vertical-nav-button" href="faq.html">FAQ</a>
-                  <a class="vertical-nav-button" href="./#rep-team">Contact Us</a>
-                  <a class="vertical-nav-button" href="archive.html">Archive</a>
+                  <a class="vertical-nav-button" href="../blog.html">Blog</a>
+                  <a class="vertical-nav-button" href="../feedback.html">Feedback</a>
+                  <a class="vertical-nav-button" href="../faq.html">FAQ</a>
+                  <a class="vertical-nav-button" href="../#rep-team">Contact Us</a>
+                  <a class="vertical-nav-button" href="../archive.html">Archive</a>
                   <!-- END VERTICAL NAV ITEMS -->
               </div>
           </div>
@@ -63,38 +71,33 @@
       
     <div class="container px-4 md:p-0 mx-auto">
 
-        <!-- Header -->
-        <header class="flex w-full header-image bg-cover bg-center items-center justify-center py-24 text-white">
-            <h1 class="text-4xl px-2 py-1 bg-black bg-opacity-75 leading-normal">SoCS Blog</h1>
-        </header>
-
-        <div class="md:px-8 mt-4">
-            <h1 class="section-header">August Blogs</h1>
-            <div class="posts-grid">
-                <div class="post-tile">
-                    <a href="blogs/1st-month-school-rep.html" class="post-tile-card">
-                        <img src="blogs/assets/1st-month-school-rep_post.jpg">
-                        <div class="meta px-4">
-                            <h2 class="text-xl font-semibold mt-2">My first month as a school rep</h2>
-                            <h3>William Oldham &middot; 1st August</h3>
-                        </div>
-                    </a>
+        <div class="post-container">
+            <h1 class="post-title">My first month as a school rep</h1>
+            <div class="post-meta">
+                <img class="post-meta-author-image" src="../assets/william-oldham.jpg">
+                <div>
+                    <h2 class="post-meta-author">William Oldham</h2>
+                    <h3 class="post-meta-data">1st August 2021</h3>
                 </div>
+            </div>
+            <div class="post-text">
+                
             </div>
         </div>
 
-
+        
+    
         <!-- CONTENT HERE -->
 
     </div>
 
     <!-- Footer -->
     <footer class="w-full text-center py-5 border-t mt-8">
-      <a href="https://github.com/socsreps/socsreps.github.io" class="no-underline inline-block" target="_blank"><img src="assets/github-logo.svg" class="rounded-full hover:bg-gray-200 w-12 max-w-none"/>
+      <a href="https://github.com/socsreps/socsreps.github.io" class="no-underline inline-block" target="_blank"><img src="../assets/github-logo.svg" class="rounded-full hover:bg-gray-200 w-12 max-w-none"/>
       </a>
     </footer>
 
-    <script src="js/common.js"></script>
+    <script src="../js/common.js"></script>
 
   </body>
 </html>
