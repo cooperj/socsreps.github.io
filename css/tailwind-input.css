@@ -10,8 +10,8 @@ p a {
   @apply underline hover:opacity-75 transition-opacity;
 }
 
-h1, h2, h3 {
-  @apply mt-4 mb-2
+.post-text h1, .post-text h2, .post-text h3 {
+  @apply mt-4 mb-2;
 }
 
 .styled-table {
@@ -35,15 +35,15 @@ ul {
   @apply list-disc space-y-1;
 }
 
-h1 {
+.post-text h1 {
   @apply text-2xl font-bold;
 }
 
-h2 {
+.post-text h2 {
   @apply text-xl font-bold;
 }
 
-h3 {
+.post-text h3 {
   @apply text-lg font-bold;
 }
 
