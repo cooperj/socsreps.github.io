@@ -9,7 +9,7 @@
 }
 
 p a {
-  @apply underline hover:opacity-75 transition-opacity;
+  @apply underline hover:text-gray-500 transition-opacity;
 }
 
 ul {
@@ -46,7 +46,7 @@ body {
   z-index: 10;
   bottom: -0.2rem;
   left: 50%;
-
+  opacity: 1;
   margin-right: -9999999px;
   max-width: 15rem;
   min-width: 8rem;
